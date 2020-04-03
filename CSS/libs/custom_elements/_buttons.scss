@@ -1,0 +1,13 @@
+.btn{
+    padding: 0.5em 1em;
+    border-radius: 5px;
+
+    &--large{
+        display: block;
+    }
+
+    &--blue{
+        background-color: $bg-col-royal-blue;
+        color: $txt-col-white;
+    }
+}

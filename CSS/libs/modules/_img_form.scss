@@ -1,0 +1,177 @@
+.index-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+$imgHeight: 300px;
+$imgTopBarHeight: 20px;
+.img{
+    &__container{
+    width: 250px;
+    height: $imgHeight;
+    background-color: white;
+    border-radius: 5px;
+
+    transform: rotate(5deg);
+    }
+
+    &__top-bar{
+        width: 100%;
+        height: $imgTopBarHeight;
+        background-color: rgb(219, 219, 219);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 3px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        
+        &__button{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 2px;
+
+            &--red{
+                background-color: rgb(255, 81, 81);
+            }
+            &--yellow{
+                background-color: rgb(255, 236, 68);
+            }
+            &--green{
+                background-color: rgb(0, 199, 0);
+            }
+        }
+    }
+
+    &__content{
+        width: 100%;
+        height: calc($imgHeight - $imgTopBarHeight);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    &__title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        align-self: center;
+
+        margin-bottom: 5px;
+
+        & p{
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: 700;
+            margin-left: 5px;
+        }
+    }
+
+    &__logo{
+        height: 20px;
+    }
+
+    &__label{
+        font-size: 10px;
+        padding: 0 5px;
+        margin-top: 3px;
+    }
+
+    &__input{
+        font-size: 10px;
+        padding: 1px 5px;
+        width: 100%;
+        border-radius: 2px;
+        border: solid 1px lightgrey;
+        color: rgb(170, 170, 170);
+
+        &__boxes{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &__box{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 2px;
+            border: solid 1px lightgrey;
+
+            &--checked{
+                background-color: rgb(64, 169, 255);
+                border: none;
+
+            }
+
+            &__label{
+                font-size: 8px;
+                padding: 0 5px;
+            }
+        }
+
+        &__random{
+            border-radius: 3px;
+            background-color: lightgrey;
+            height: 12px;
+            margin: 2px 0;
+
+            &--1{
+                width: 100%;
+            }
+            &--2{
+                width: 30%;
+            }
+            &--3{
+                width: 50%;
+            }
+        }
+    }
+
+    &__submit{
+        position: relative;
+        width: 50px;
+        height: 25px;
+        align-self: center;
+        margin-top: 10px;
+
+        background-color: rgb(64, 169, 255);
+        border-radius: 2px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    &__pointer{
+        position: absolute;
+        top: 20px;
+        left: 35px;
+        z-index: 17;
+
+        font-size: 2rem;
+        color: rgb(56, 56, 56);
+        transform: rotate(-5deg);
+    }
+
+    &__click{
+        position: absolute;
+        top: 13px;
+        left: 33px;
+        z-index: 16;
+
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: rgba(104, 104, 104, 0.2);
+    }
+}

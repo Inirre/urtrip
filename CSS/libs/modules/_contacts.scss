@@ -1,0 +1,21 @@
+.contacts{
+
+    width: 100%;
+    padding: 1rem;
+    
+    &__info{
+        
+        padding: 1rem;
+
+        &__title{
+            color: dodgerblue;
+            margin-bottom: 1rem;
+        }
+    
+        &__content{
+            color: $txt-col-grey;
+            line-height: 2em;
+        }
+    }
+
+}

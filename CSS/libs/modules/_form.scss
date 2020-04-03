@@ -1,0 +1,46 @@
+.form{
+
+    background-color: $bg-col-white;
+    border-radius: 5px;
+    padding: 1rem;
+
+    &__item{
+        margin-top: 1rem;
+
+        &:first-of-type{
+            margin-top: 0;
+        }
+    }
+
+    &__text{
+        border: solid 1px rgb(221, 221, 221);
+        border-radius: 5px;
+
+        padding: 0.5em 0.8em;
+        width: 300px;
+    }
+    
+    &__textarea{
+        width: 100%;
+        max-width: 100%;
+        min-height: 150px;
+    }
+
+    &__submit{
+        border: none;
+    }
+
+    &__remarque{
+        font-size: 0.8rem;
+        color: grey;
+    }
+
+    &__confirmation{
+        background-color: lightgreen;
+        border-radius: 5px;
+        padding: 0.3em 0.6em;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: green;
+    }
+}

@@ -1,0 +1,24 @@
+.footer{
+    padding: 2rem 1rem;
+    background-color: $bg-col-top-bar;
+    text-align: center;
+    color: $txt-col-white;
+
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+.link-title{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.copyright{
+    padding: 2rem 0;
+}
