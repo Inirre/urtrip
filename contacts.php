@@ -36,13 +36,23 @@ if($_POST["submit"]) {
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = $_POST["senderSubject"];
 
-        $body = $_POST["senderMessage"];
+        if ($_POST["senderPhone"]){
+            $phone = $_POST["senderPhone"];
+        } else {
+            $phone = 'no phone number provided';
+        }
+        $body = $_POST["senderMessage"] . $phone;
 
         $mail->Body    = $body;
         $mail->AltBody = strip_tags($body);
 
         $mail->send();
-        $thankYou="<p class='form__confirmation'>Merci de nous avoir contacter !\nLes messages sont généralement traîtés sous 48h.</p>";
+
+        $thankYou="<div class='form__confirmation'>
+                    <p class='form__confirmation__message'>Merci de nous avoir contacté !\nLes messages sont généralement traîtés sous 48h.</p>
+                    <i class='far fa-times-circle form__confirmation__cross'></i>
+                    </div>";
+
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
@@ -69,7 +79,7 @@ require 'header.php';
 <div class="contacts">
 
     <div class="main-container">
-
+        
         <div class="contacts__info">
             <h3 class="contacts__info__title">Comment nous contacter ?</h1>
             <p class="contacts__info__content">Ecrivez-nous directement en remplissant le formulaire ci-dessous. Votre demande sera traîtée sous 48 heures.<br>
@@ -95,7 +105,7 @@ require 'header.php';
     
                 <div class="form__item">
                     <label>Numéro de téléphone<br>
-                        <input class="form__text" name="senderName" type="tel" placeholder="06 12 34 56 78" required>
+                        <input class="form__text" name="senderPhone" type="tel" placeholder="06 12 34 56 78" required>
                     </label>
                 </div>
 

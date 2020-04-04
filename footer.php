@@ -47,8 +47,9 @@
 </footer>
 
 </main>
-<script src="script.js" defer></script>
-<script src="sideNav.js" defer></script>
+<script src="scripts/scroll.js" defer></script>
+<script src="scripts/sideNav.js" defer></script>
+<script src="scripts/formMessages.js" defer></script>
 
 </body>
 </html>

@@ -10,7 +10,7 @@ $imgTopBarHeight: 20px;
     &__container{
     width: 250px;
     height: $imgHeight;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
 
     transform: rotate(5deg);
@@ -174,4 +174,12 @@ $imgTopBarHeight: 20px;
         border-radius: 50%;
         background-color: rgba(104, 104, 104, 0.2);
     }
+}
+
+@media screen and (max-width: 600px){
+
+    .img__container{
+        display: none;
+    }
+
 }

@@ -42,6 +42,14 @@
         padding: 2rem;
     }
 
+}
 
 
+@media screen and (max-width: 600px){
+    .concept:nth-of-type(odd){
+        flex-direction: column-reverse;
+    }
+    .concept:nth-of-type(even){
+        flex-direction: column;
+    }
 }
