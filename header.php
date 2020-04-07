@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/style.css">
     
+    <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/95243ed3f6.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/fr.js"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/95243ed3f6.js" crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
     <title>
         <?php if(isset($title)):?>

@@ -11,9 +11,12 @@ html {
 }
 
 
-html, body{
+html{
     font-family: 'Poppins', sans-serif;
+}
+body{
     background-color: rgb(248, 247, 255);
+    z-index: -100;
 }
 
 ul{
