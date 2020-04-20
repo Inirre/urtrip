@@ -44,12 +44,10 @@
                 <ul class="nav__list">
     
                     <li class="nav__item"><a href="index.php" class="nav__link hover__bg-o3">Acceuil</a></li>
-                    <li class="nav__item"><a href="my_trip.php" class="nav__link hover__bg-o3">Mon Voyage</a></li>
+                    <li class="nav__item"><a href="urtrip-form.php" class="nav__link hover__bg-o3">Mon Voyage</a></li>
                     <li class="nav__item"><a href="about.php" class="nav__link hover__bg-o3">A Propos</a></li>
-                    <li class="nav__item"><a href="contacts.php" class="nav__link hover__bg-o3">Contacts</a></li>
-                    <li class="nav__item ml-auto"><a href="https://www.facebook.com/urtripvoyage/" target="_blank" class="nav__link nav__icon hover__bg-o3"><i class="fab fa-facebook"></i></a></li>
-                    <li class="nav__item"><a href="mailto:valentin.dupont.urtrip@gmail.com" class="nav__link nav__icon hover__bg-o3"><i class="fas fa-envelope"></i></a></li>
-                    <li class="nav__item"><a href="tel:+33615732042" class="nav__link nav__icon hover__bg-o3"><i class="fas fa-phone"></i></a></li>
+                    <li class="nav__item"><a href="contact.php" class="nav__link hover__bg-o3">Contact</a></li>
+                    <li class="nav__item ml-auto"><a href="https://www.facebook.com/urtripvoyage/" target="_blank" class="nav__link nav__icon hover__bg-o3"><i class="fab fa-facebook"></i><p class="nav__icon__label">Facebook</p></a></li>
                 
                 </ul>
 

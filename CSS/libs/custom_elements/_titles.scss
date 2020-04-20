@@ -1,0 +1,39 @@
+.title--main{
+    text-transform: uppercase;
+
+    &--blue{
+        color: $color--blue--2;
+    }
+
+    &--green{
+        color: $color--green--2;
+    }
+
+    &--yellow{
+        color: $color--yellow;
+    }
+    
+    &--pink{
+        color: $color--pink;
+    }
+}
+
+.title--secondary{
+
+    &--blue{
+        color: $color--blue--4;
+    }
+
+    &--green{
+        color: $color--green--2;
+    }
+
+    &--yellow{
+        color: $color--yellow;
+    }
+    
+    &--pink{
+        color: $color--pink;
+    }
+}
+

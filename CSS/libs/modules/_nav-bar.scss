@@ -5,8 +5,8 @@
     width: 100%;
     height: 4rem;
     background-color: none;
-    color: $txt-col-white;
-    background: $bg-col-top-bar;
+    color: $color--white;
+    background: $color--main;
 
     display: flex;
     flex-direction: row;
@@ -33,6 +33,10 @@
 
     &__icon{
         font-size: 1.5rem;
+        &__label{
+            display: none;
+            font-size: 1rem;
+        }
     }
 }
 
@@ -74,7 +78,7 @@
     & div{
         width: 25px;
         height: 3px;
-        background-color: white;
+        background-color: $color--white;
         margin: 5px;
         transition: all 0.2s ease;
     }
@@ -89,7 +93,7 @@
         right: -250px;
         top: 4rem;
 
-        background-color: slateblue;
+        background-color: $color--main;
 
         width: 250px;
 
@@ -108,7 +112,9 @@
     }
 
     .nav__link{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100%;
         margin: 0;
@@ -117,8 +123,9 @@
         line-height: 3rem;
     }
 
-    .nav__icon{
-        display: none;
+    .nav__icon__label{
+        display: block;
+        margin-left: 10px;
     }
 
     .burger{

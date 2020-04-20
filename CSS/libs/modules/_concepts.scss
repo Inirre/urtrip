@@ -14,7 +14,7 @@
 
     padding: 1rem;
 
-    border-top: solid 1px rgb(202, 202, 202);
+    border-top: solid 1px $color--grey--3;
 
     &:first-of-type{
         border-top: none;
@@ -26,12 +26,11 @@
     }
 
     &__title{
-        color: dodgerblue;
         margin-bottom: 1rem;
     }
 
     &__content{
-        color: $txt-col-grey;
+        color: $color--grey--5;
         line-height: 2em;
     }
 

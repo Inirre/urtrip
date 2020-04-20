@@ -1,25 +1,30 @@
 //* COLORS *//
 
-/* backgrounds */
-$bg-col-top-bar: slateblue;
+$color--main: slateblue;
+$color--main--bg: rgb(248, 247, 255);
 
-$bg-col-white: rgb(255, 255, 255);
-$bg-col-black: rgb(0, 0, 0);
-$bg-col-light-grey: rgb(241, 241, 241);
-$bg-col-grey: rgb(131, 131, 131);
-$bg-col-blue: rgb(137, 170, 253);
-$bg-col-light-blue: rgb(237, 242, 253);
-$bg-col-royal-blue: dodgerblue;
+$color--white: white;
 
-/* text colors */
-$txt-col-grey: rgb(83, 83, 83);
-$txt-col-black: rgb(0, 0, 0);
-$txt-col-blue: rgb(137, 170, 253);
-$txt-col-pink: #FF1684;
-$txt-col-deep-blue: #0146F2;
-$txt-col-dark-grey: rgb(37, 37, 37);
-$txt-col-white: rgb(255, 255, 255);
-$txt-col-orange: rgb(255, 51, 0);
+$color--black: black;
 
-/* button colors */
+$color--grey--1: rgb(252, 252, 252);
+$color--grey--2: rgb(241, 241, 241);
+$color--grey--3: rgb(212, 212, 212);
+$color--grey--4: grey;
+$color--grey--5: rgb(83, 83, 83);
+$color--grey--6: rgb(37, 37, 37);
 
+
+$color--blue--1: rgb(137, 170, 253);
+$color--blue--2: rgb(92, 135, 255);
+$color--blue--3: dodgerblue;
+$color--blue--4: rgb(0, 110, 255);
+
+$color--pink: #FF1684;
+
+
+$color--green--1: lightgreen;
+$color--green--2: rgb(64, 228, 105);
+$color--green--3: green;
+
+$color--yellow: rgb(255, 196, 0);

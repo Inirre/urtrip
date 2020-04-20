@@ -8,12 +8,11 @@
         padding: 1rem;
 
         &__title{
-            color: dodgerblue;
             margin-bottom: 1rem;
         }
     
         &__content{
-            color: $txt-col-grey;
+            color: $color--grey--4;
             line-height: 2em;
         }
     }

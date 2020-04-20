@@ -50,9 +50,6 @@
 
 <script src="scripts/scroll.js" defer></script>
 <script src="scripts/sideNav.js" defer></script>
-<script src="scripts/formMessages.js" defer></script>
-<script src="scripts/datePicker.js" defer></script>
-<script src="scripts/addMinors.js" defer></script>
 
 </body>
 </html>

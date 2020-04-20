@@ -1,13 +1,23 @@
 .btn{
     padding: 0.5em 1em;
     border-radius: 5px;
+    cursor: pointer;
 
     &--large{
-        display: block;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 1em;
     }
 
     &--blue{
-        background-color: $bg-col-royal-blue;
-        color: $txt-col-white;
+        background-color: $color--blue--4;
+        color: $color--white;
+        &:hover{
+            background-color: lighten($color: $color--blue--4, $amount: 5%);
+        }
     }
+
+
+
 }

@@ -3,7 +3,7 @@
     &__section{
         border-radius: 5px;
         margin-top: 1rem;
-        background-color: white;
+        background-color: $color--white;
         padding: 1rem;
         box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
 
@@ -14,29 +14,21 @@
             padding: 2rem;
             box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
 
-            &__main{
-                text-transform: uppercase;
-            }
-
             &__description{
-                color: rgb(117, 117, 117);
+                color: $color--grey--4;
             }
-        }
-        
-        &:first-of-type{
-            margin-top: 0;
         }
         
     }
 
     &__fieldset{
         border-radius: 2px;
-        border: solid 1px rgb(0, 110, 255);
+        border: solid 1px $color--blue--4;
         padding: 1rem;
         margin-top: 2rem;
         & legend{
             padding: 0 5px;
-            color: rgb(0, 110, 255);
+            color: $color--blue--4;
         }
     }
 
@@ -44,18 +36,21 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, calc(50% - 0.5rem));
         grid-gap: 1rem;
-
     }
 
     &__item{
         margin-top: 1.5rem;
         font-size: 0.8rem;
+
+        &:first-of-type{
+            margin-top: 0;
+        }
     }
 
     &__field{
-        border: solid 1px rgb(212, 212, 212);
+        border: solid 1px $color--grey--3;
         border-radius: 5px;
-        background-color: rgb(252, 252, 252);
+        background-color: $color--grey--1;
 
         padding: 0.5em 0.8em;
         width: 100%;
@@ -87,7 +82,7 @@
 
     &__note{
         font-size: 0.8rem;
-        color: grey;
+        color: $color--grey--4;
     }
 
     &__confirmation{
@@ -99,12 +94,12 @@
         justify-content: space-between;
         align-items: center;
 
-        background-color: lightgreen;
+        background-color: $color--green--1;
         border-radius: 5px;
         padding: 1em 1.3em;
         margin: 1rem;
         font-size: 1rem;
-        color: green;
+        color: $color--green--3;
 
         &__cross{
             margin-left: 1rem;
@@ -113,37 +108,8 @@
     }
 }
 
-
-// section markers and title colors
-$col-section-1: rgb(92, 135, 255);
-$col-section-2: rgb(64, 228, 105);
-$col-section-3: rgb(255, 196, 0);
-
-.section-marker{
-
-    &--1{
-        border-left: solid 5px $col-section-1;
-    }
-    &--2{
-        border-left: solid 5px $col-section-2;
-    }
-    &--3{
-        border-left: solid 5px $col-section-3;
-    }
-}
-
-.section__title--1{
-    color: $col-section-1;
-}
-.section__title--2{
-    color: $col-section-2;
-}
-.section__title--3{
-    color: $col-section-3;
-}
-
 .clickable{
-    color: rgb(0, 110, 255);
+    color: $color--blue--4;
     cursor: pointer;
 
     &:hover{

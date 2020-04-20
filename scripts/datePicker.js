@@ -4,7 +4,7 @@ const todayDate = () => {
 };
 const getDateOptions = (id) => {
     const dateOptions = {
-        dateFormat: "d/m/Y", 
+        dateFormat: "Y-m-d", 
         allowInput: true, 
         appendTo: document.getElementById(id),
         minDate: todayDate(),
@@ -13,5 +13,5 @@ const getDateOptions = (id) => {
     return dateOptions;
 
 }
-let dateStartPickr = flatpickr('#dateStart', getDateOptions('dateStartContainer'));
-let dateEndPickr = flatpickr('#dateEnd', getDateOptions('dateEndContainer'));
+let dateStartPickr = flatpickr('#dateDeparture', getDateOptions('dateDepartureContainer'));
+let dateEndPickr = flatpickr('#dateReturn', getDateOptions('dateReturnContainer'));
