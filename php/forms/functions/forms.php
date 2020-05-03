@@ -3,7 +3,9 @@
 // filter array to only get key-value pairs form fields filled by customer
 function getNonEmptyFields (array $arrayToFilter): array {
     $nonEmptyFields = array_filter($arrayToFilter, function($k){
-        return $k !== "";
+        if($k !== "" && $k !== " " && $k !== NULL){
+            return $k;
+        }
     });
     return $nonEmptyFields;
 }

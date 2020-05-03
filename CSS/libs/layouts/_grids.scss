@@ -1,0 +1,32 @@
+.grid--2c{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(50% - 0.5rem));
+    grid-gap: 1rem;
+}
+
+.grid--2c--25-75{
+    display: grid;
+    grid-template-columns: calc(25% - 0.5rem) calc(75% - 0.5rem);
+    grid-gap: 1rem;
+}
+
+.grid--2c--35-65{
+    display: grid;
+    grid-template-columns: calc(35% - 0.5rem) calc(65% - 0.5rem);
+    grid-gap: 1rem;
+}
+
+.grid--2c--60-40{
+    display: grid;
+    grid-template-columns: calc(60% - 0.5rem) calc(40% - 0.5rem);
+    grid-gap: 1rem;
+}
+
+@media screen and (max-width: 700px){
+    .grid--2c--60-40{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 1rem;
+    }
+    
+}

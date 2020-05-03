@@ -1,0 +1,16 @@
+.tab__card{
+
+    text-align: center;
+    padding: 1rem;
+    border: solid 1px $color--grey--3;
+    border-radius: 10px;
+    color: $color--grey--4;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &--blue{
+        border-color: $color--blue--4;
+        color: $color--blue--4;
+    }
+    
+}

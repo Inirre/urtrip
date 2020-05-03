@@ -22,7 +22,7 @@
     }
 
     &__fieldset{
-        border-radius: 2px;
+        border-radius: 10px;
         border: solid 1px $color--blue--4;
         padding: 1rem;
         margin-top: 2rem;
@@ -41,6 +41,7 @@
     &__item{
         margin-top: 1.5rem;
         font-size: 0.8rem;
+        color: $color--grey--4;
 
         &:first-of-type{
             margin-top: 0;
@@ -48,9 +49,9 @@
     }
 
     &__field{
-        border: solid 1px $color--grey--3;
+        border: none;
         border-radius: 5px;
-        background-color: $color--grey--1;
+        background-color: $color--main--bg;
 
         padding: 0.5em 0.8em;
         width: 100%;
@@ -64,12 +65,43 @@
             width: 100px;
         }
 
+        &__date{
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: $color--main--bg;
+    
+            padding: 0.5em 0.8em;
+            height: 2rem;
+            width: 100%;
+
+            &__icon{
+                border: none;
+                border-radius: 5px 0 0 5px;
+                background-color: $color--main--bg;
+                color: $color--grey--4;
+                padding: 0.5em 0.8em;
+                height: 2rem;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+
+    }
+
+    &__flex__row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     
     &__textarea{
         width: 100%;
-        max-width: 100%;
+        min-width: 100%;
         min-height: 150px;
+        resize: none;
     }
 
     &__box{

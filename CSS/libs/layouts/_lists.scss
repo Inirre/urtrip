@@ -1,0 +1,30 @@
+.list{
+    &-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: auto;
+        border: 1px solid $color--grey--7;
+        border-radius: 5px;
+        background-color: $color--white;
+        max-width: 600px;
+    }
+    &-item{
+
+        width: 100%;
+        padding: 5px;
+        border-top: solid 1px $color--grey--7;
+        font-size: 0.6rem;
+        color: $color--grey--4;
+        &:first-child{
+            border: none;
+        }
+    
+    }
+    &-title{
+        font-size: 1rem;
+        color: $color--grey--5;
+    }
+
+}
+
+

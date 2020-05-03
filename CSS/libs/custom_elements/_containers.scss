@@ -13,3 +13,36 @@
     margin: auto;
 
 }
+
+.sticky-container{
+    position: sticky;
+    top: 5rem;
+    margin-bottom: auto;
+    //max-height: calc(100vh - 6rem);
+    //overflow-y: scroll;
+}
+
+.popup-fullScreen{
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    padding: 1rem;
+    background-color: rgba(59, 59, 59, 0.767);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.plain-container{
+    margin-top: 4rem;
+    min-width: 100vh;
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
